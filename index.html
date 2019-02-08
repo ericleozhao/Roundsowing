@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- https://code.jquery.com/jquery-1.10.2.js 尝试过不加http，但是呢发现有1 Uncaught ReferenceError: $ is not defined 错误提示-->
+<link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <title>王者轮播</title>
+  <style>
+    .images{
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.5s;
+    }
+    .images > img{
+      vertical-align: top;
+    }
+    .window{
+      width: 300px;
+      overflow: hidden;
+    }
+    .span{
+    color: red;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="window">
+    <div class="images" id=images>
+      <img src="./img/周瑜.png" width=300 alt="图片1" height=400>
+      <img src="./img/小乔.png" width=300 alt="" height=400>
+      <img src="./img/吕布.png" width=300 alt="" height=400>
+      <img src="./img/貂蝉.png" width=300 alt="" height=400>
+    </div>
+  </div>
+  <span id=buttons>
+    <span>周瑜</span>
+    <span>小乔</span>
+    <span>吕布</span>
+    <span>貂蝉</span>
+  </span>
+  <script src="./main.js"></script>
+</body>
+
+</html>
